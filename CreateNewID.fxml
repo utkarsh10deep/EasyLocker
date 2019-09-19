@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="567.0" prefWidth="600.0" style="-fx-background-color: #002dbf;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="easylocker.CreateNewIDController">
+  <children>
+    <Label layoutX="167.0" layoutY="161.0" prefHeight="29.0" prefWidth="167.0" text="CREATE NEW ID:" textFill="WHITE">
+      <font>
+        <Font name="Gill Sans Ultra Bold" size="15.0" />
+      </font>
+    </Label>
+    <Label layoutX="40.0" layoutY="277.0" prefHeight="29.0" prefWidth="146.0" text="Email-id/Username:" textFill="WHITE">
+      <font>
+        <Font name="Lucida Bright Demibold" size="14.0" fx:id="x1" />
+      </font>
+    </Label>
+    <Label font="$x1" layoutX="70.0" layoutY="321.0" prefHeight="29.0" prefWidth="107.0" text="New Password:" textFill="WHITE" />
+    <Label font="$x1" layoutX="19.0" layoutY="372.0" prefHeight="29.0" prefWidth="164.0" text="Repeat New password:" textFill="WHITE" />
+    <Button fx:id="createNewId" layoutX="342.0" layoutY="497.0" mnemonicParsing="false" onAction="#handleCreateNewIdButton" prefHeight="29.0" prefWidth="120.0" text="Next" />
+    <Button fx:id="back" layoutX="63.0" layoutY="497.0" mnemonicParsing="false" onAction="#handleBackButton" prefHeight="29.0" prefWidth="120.0" text="Back" />
+    <TextField fx:id="email" layoutX="198.0" layoutY="277.0" prefHeight="29.0" prefWidth="287.0" text="" />
+    <PasswordField fx:id="newPassword" layoutX="198.0" layoutY="321.0" prefHeight="29.0" prefWidth="287.0" />
+    <PasswordField fx:id="repeatPassword" layoutX="198.0" layoutY="372.0" prefHeight="29.0" prefWidth="287.0" />
+    <CheckBox fx:id="cBox" layoutX="139.0" layoutY="438.0" mnemonicParsing="false" prefWidth="146.0" text="I accept tHIS : " textFill="WHITE">
+      <font>
+        <Font name="Algerian" size="15.0" fx:id="x2" />
+      </font>
+    </CheckBox>
+    <Hyperlink id="condition" fx:id="conditions" font="$x2" layoutX="271.0" layoutY="434.0" onAction="#handleConditionClick" text="Terms &amp; Conditions" textFill="WHITE" />
+    <Label layoutX="163.0" layoutY="184.0" prefHeight="29.0" prefWidth="183.0" text="(Requires an internet connection)" textFill="WHITE" />
+    <Label layoutX="51.0" layoutY="292.0" prefHeight="29.0" prefWidth="129.0" text="(OTP will be sent here)" textFill="WHITE" />
+    <Label layoutX="27.0" layoutY="405.0" prefHeight="29.0" prefWidth="532.0" text="In case you forget your Easy Locker password, this e-mail will be used to recover your account." textFill="WHITE" />
+    <Label fx:id="emailLabel" layoutX="225.0" layoutY="306.0" prefWidth="198.0" text="" textFill="WHITE">
+      <font>
+        <Font size="11.0" fx:id="x4" />
+      </font>
+    </Label>
+    <Label id="emailLabel" fx:id="passwordMatch" font="$x4" layoutX="224.0" layoutY="401.0" prefWidth="219.0" text="" textFill="WHITE" />
+    <Label id="emailLabel" fx:id="passwordEmpty" font="$x4" layoutX="211.0" layoutY="350.0" prefWidth="245.0" text="" textFill="WHITE" />
+    <Label id="emailLabel" fx:id="terms" font="$x4" layoutX="163.0" layoutY="470.0" prefWidth="245.0" text="" textFill="WHITE" />
+    <Label font="$x1" layoutX="128.0" layoutY="230.0" prefHeight="29.0" prefWidth="52.0" text="Name:" textFill="WHITE" />
+    <TextField id="email" fx:id="nameField" layoutX="198.0" layoutY="230.0" prefHeight="29.0" prefWidth="287.0" text="" />
+    <Label id="emailLabel" fx:id="nameLabel" font="$x4" layoutX="212.0" layoutY="259.0" prefWidth="198.0" text="" textFill="WHITE" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#fff500" height="161.0" layoutX="0.0" layoutY="0.0" stroke="BLACK" strokeType="INSIDE" width="600.0" />
+    <Text fill="RED" layoutX="244.0" layoutY="54.0" scaleX="7.704341494923157" scaleY="4.382525697503671" strokeType="OUTSIDE" strokeWidth="0.0" text="Easy Locker">
+      <font>
+        <Font name="Bernard MT Condensed" size="12.0" />
+      </font>
+    </Text>
+    <Label layoutX="165.0" layoutY="81.0" prefHeight="29.0" prefWidth="171.0" text="Experience Simplicity" textFill="#4100cc">
+      <font>
+        <Font name="Californian FB Bold" size="18.0" />
+      </font>
+    </Label>
+    <Label layoutX="82.0" layoutY="110.0" prefHeight="41.0" prefWidth="346.0" text="HIDE YOUR CONFIDENTIAL FILES ON pc" textFill="#009987">
+      <font>
+        <Font name="Algerian" size="19.0" />
+      </font>
+    </Label>
+  </children>
+</AnchorPane>

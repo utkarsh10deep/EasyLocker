@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="550.0" prefWidth="542.0" style="-fx-background-color: #002dbf;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="easylocker.LockFolderController">
+  <children>
+    <Label layoutX="124.0" layoutY="183.0" prefHeight="41.0" prefWidth="294.0" text="Pick a folder you want to lock:" textFill="WHITE">
+      <font>
+        <Font name="Arial Rounded MT Bold" size="20.0" />
+      </font>
+    </Label>
+    <TextField id="filePath" fx:id="folderPath" layoutX="51.0" layoutY="246.0" prefHeight="29.0" prefWidth="315.0" />
+    <Button fx:id="browse" layoutX="388.0" layoutY="246.0" mnemonicParsing="false" onAction="#handleBrowseButton" prefHeight="29.0" prefWidth="74.0" text="Browse" />
+    <Label layoutX="175.0" layoutY="342.0" prefWidth="287.0" text="Alters windows permissions to protect your folder" textFill="WHITE" />
+    <Label layoutX="175.0" layoutY="365.0" prefWidth="287.0" text="from getting deleted/altered by mistake." textFill="WHITE" />
+    <Button fx:id="back" layoutX="75.0" layoutY="440.0" mnemonicParsing="false" onAction="#handleBackButton" prefHeight="29.0" prefWidth="88.0" text="Back" />
+    <Button id="lockFile" fx:id="lockFolder" layoutX="338.0" layoutY="440.0" mnemonicParsing="false" onAction="#handleLockFolderButton" prefHeight="29.0" prefWidth="107.0" text="Lock This Folder" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#fff500" height="161.0" layoutX="-7.0" layoutY="0.0" stroke="BLACK" strokeType="INSIDE" width="570.0001220703125" />
+    <Text fill="RED" layoutX="255.0" layoutY="50.0" scaleX="7.704341494923157" scaleY="4.382525697503671" strokeType="OUTSIDE" strokeWidth="0.0" text="Easy Locker">
+      <font>
+        <Font name="Bernard MT Condensed" size="12.0" />
+      </font>
+    </Text>
+    <Label layoutX="186.0" layoutY="77.0" prefHeight="29.0" prefWidth="171.0" text="Experience Simplicity" textFill="#4100cc">
+      <font>
+        <Font name="Californian FB Bold" size="18.0" />
+      </font>
+    </Label>
+    <Label layoutX="105.0" layoutY="106.0" prefHeight="41.0" prefWidth="346.0" text="HIDE YOUR CONFIDENTIAL FILES ON pc" textFill="#009987">
+      <font>
+        <Font name="Algerian" size="19.0" />
+      </font>
+    </Label>
+    <Label layoutX="75.0" layoutY="336.0" prefHeight="29.0" prefWidth="90.0" text="BASIC LOCK:" textFill="WHITE">
+      <font>
+        <Font size="16.0" />
+      </font>
+    </Label>
+  </children>
+</AnchorPane>

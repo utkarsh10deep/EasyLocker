@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" minWidth="570.0001220703125" prefHeight="535.0" prefWidth="570.0001220703125" style="-fx-background-color: #002dbf;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="easylocker.EmailAuthenticationController">
+  <children>
+    <Label layoutX="119.0" layoutY="210.0" prefHeight="29.0" prefWidth="348.0" text="ENTER OTP SENT TO YOUR EMAIL ID:" textFill="WHITE">
+      <font>
+        <Font name="Gill Sans Ultra Bold" size="15.0" />
+      </font>
+    </Label>
+    <TextField fx:id="otp" layoutX="193.0" layoutY="272.0" prefHeight="41.0" prefWidth="200.0" />
+    <Button fx:id="back" layoutX="59.0" layoutY="425.0" mnemonicParsing="false" onAction="#handleBackButton" prefHeight="29.0" prefWidth="120.0" text="Back" />
+    <Button id="createNewId" fx:id="createId" layoutX="407.0" layoutY="415.0" mnemonicParsing="false" onAction="#handleCreateIdButton" prefHeight="29.0" prefWidth="120.0" text="Create New ID" />
+    <Label layoutX="163.0" layoutY="313.0" prefHeight="29.0" prefWidth="274.0" text="Please have patience if you didn't receive OTP yet!" textFill="WHITE" />
+    <Label layoutX="133.0" layoutY="337.0" prefHeight="29.0" prefWidth="334.0" text="Sometimes, it might take several minutes depending on traffic!" textFill="WHITE" />
+    <Label layoutX="149.0" layoutY="357.0" prefHeight="29.0" prefWidth="288.0" text="In worst case scenario, you can go back and try again." textFill="WHITE" />
+    <Label id="emailLabel" fx:id="incorrectOtp" layoutX="213.0" layoutY="198.0" prefHeight="20.0" prefWidth="132.0" text="" textFill="RED">
+      <font>
+        <Font size="11.0" />
+      </font>
+    </Label>
+    <Label fx:id="correctOtp" layoutX="149.0" layoutY="384.0" prefHeight="41.0" prefWidth="288.0" text="" textFill="#661800">
+      <font>
+        <Font name="Algerian" size="19.0" fx:id="x2" />
+      </font>
+    </Label>
+    <Label id="emailLabel" fx:id="userExists" layoutX="144.0" layoutY="454.0" prefHeight="41.0" prefWidth="313.0" text="" textFill="RED">
+      <font>
+        <Font name="Calibri Bold Italic" size="16.0" />
+      </font>
+    </Label>
+    <Label fx:id="email" layoutX="154.0" layoutY="239.0" prefHeight="29.0" prefWidth="303.0" text="" textFill="WHITE">
+      <font>
+        <Font size="13.0" />
+      </font>
+    </Label>
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#fff500" height="161.0" layoutX="0.0" layoutY="1.0" stroke="BLACK" strokeType="INSIDE" width="570.0001220703125" />
+    <Text fill="RED" layoutX="258.0" layoutY="54.0" scaleX="7.704341494923157" scaleY="4.382525697503671" strokeType="OUTSIDE" strokeWidth="0.0" text="Easy Locker">
+      <font>
+        <Font name="Bernard MT Condensed" size="12.0" />
+      </font>
+    </Text>
+    <Label layoutX="193.0" layoutY="81.0" prefHeight="29.0" prefWidth="171.0" text="Experience Simplicity" textFill="#4100cc">
+      <font>
+        <Font name="Californian FB Bold" size="18.0" />
+      </font>
+    </Label>
+    <Label font="$x2" layoutX="106.0" layoutY="110.0" prefHeight="41.0" prefWidth="346.0" text="HIDE YOUR CONFIDENTIAL FILES ON pc" textFill="#009987" />
+  </children>
+</AnchorPane>

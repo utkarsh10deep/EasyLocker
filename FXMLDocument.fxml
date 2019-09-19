@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="532.0" prefWidth="525.0000999999975" style="-fx-background-color: #002dbf;&#10;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="easylocker.FXMLDocumentController">
+  <children>
+    <Button id="button" fx:id="login" layoutX="251.0" layoutY="385.0" onAction="#handleLoginButton" prefHeight="29.0" prefWidth="86.0" text="Log-In" textFill="BLACK" textOverrun="CENTER_WORD_ELLIPSIS" />
+    <Label fx:id="label" layoutX="126.0" layoutY="120.0" minHeight="16.0" minWidth="69.0" />
+    <Label contentDisplay="CENTER" layoutX="75.0" layoutY="246.0" prefHeight="41.0" prefWidth="86.0" text="UserName:" textFill="WHITE">
+      <font>
+        <Font name="Algerian" size="15.0" fx:id="x1" />
+      </font>
+    </Label>
+    <TextField fx:id="username" layoutX="184.0" layoutY="252.0" prefHeight="29.0" prefWidth="245.0" />
+    <Label contentDisplay="CENTER" font="$x1" layoutX="75.0" layoutY="300.0" prefHeight="41.0" prefWidth="86.0" text="PASSWORD:" textFill="WHITE" />
+    <PasswordField fx:id="password" layoutX="184.0" layoutY="300.0" prefHeight="29.0" prefWidth="245.0" text="" />
+    <Button id="createAccount" fx:id="createNewID" layoutX="337.0" layoutY="435.0" mnemonicParsing="false" onAction="#handleCreateNewIDButton" prefHeight="29.0" prefWidth="99.0" text="Create New ID" />
+    <Label layoutX="195.0" layoutY="205.0" prefHeight="29.0" prefWidth="86.0" text="LOG-IN:" textFill="WHITE">
+      <font>
+        <Font name="Gill Sans Ultra Bold" size="15.0" />
+      </font>
+    </Label>
+    <Button id="createAccount" fx:id="forgotPassword" layoutX="152.0" layoutY="435.0" mnemonicParsing="false" onAction="#handleForgotPasswordButton" prefHeight="29.0" prefWidth="109.0" text="Forgot Password" />
+    <Label fx:id="wrongCredentials" layoutX="160.0" layoutY="168.0" prefHeight="29.0" prefWidth="201.0" text="" textFill="WHITE" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#fff500" height="161.0" layoutX="0.0" layoutY="0.0" stroke="BLACK" strokeType="INSIDE" width="570.0001220703125" />
+    <Text fill="RED" layoutX="258.0" layoutY="60.0" scaleX="7.704341494923157" scaleY="4.382525697503671" strokeType="OUTSIDE" strokeWidth="0.0" text="Easy Locker">
+      <font>
+        <Font name="Bernard MT Condensed" size="12.0" />
+      </font>
+    </Text>
+    <Label layoutX="200.0" layoutY="87.0" prefHeight="29.0" prefWidth="171.0" text="Experience Simplicity" textFill="#4100cc">
+      <font>
+        <Font name="Californian FB Bold" size="18.0" />
+      </font>
+    </Label>
+    <Label layoutX="112.0" layoutY="120.0" prefHeight="41.0" prefWidth="346.0" text="HIDE YOUR CONFIDENTIAL FILES ON pc" textFill="#009987">
+      <font>
+        <Font name="Algerian" size="19.0" />
+      </font>
+    </Label>
+    <CheckBox fx:id="rememberMe" layoutX="207.0" layoutY="341.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="109.0" text="Remember Me" textFill="WHITE">
+      <font>
+        <Font name="Arial" size="12.0" />
+      </font>
+    </CheckBox>
+    <Button fx:id="clear" layoutX="323.0" layoutY="345.0" mnemonicParsing="false" onAction="#handleClearButton" text="Clear" />
+  </children>
+</AnchorPane>

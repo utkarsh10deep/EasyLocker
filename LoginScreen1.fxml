@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="585.0" prefWidth="572.0001220703125" style="-fx-background-color: #002dbf;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="easylocker.LoginScreen1Controller">
+  <children>
+    <Label id="GREETING" fx:id="greeting" layoutX="203.0" layoutY="185.0" prefHeight="29.0" prefWidth="253.0" text="" textFill="WHITE">
+      <font>
+        <Font name="Algerian" size="19.0" fx:id="x1" />
+      </font>
+    </Label>
+    <Button fx:id="lockFile" layoutX="26.0" layoutY="273.0" mnemonicParsing="false" onAction="#handleLockFileButton" prefHeight="53.0" prefWidth="519.0" text="LOCK A FILE">
+      <font>
+        <Font name="Arial Rounded MT Bold" size="20.0" fx:id="x2" />
+      </font>
+      <textFill>
+        <Color blue="0.800" green="0.000" red="0.255" fx:id="x4" />
+      </textFill>
+    </Button>
+    <Button fx:id="changePassword" layoutX="14.0" layoutY="226.0" mnemonicParsing="false" onAction="#handleChangePasswordButton" prefHeight="29.0" prefWidth="138.0" text="Change Password" />
+    <Button fx:id="logout" layoutX="406.0" layoutY="226.0" mnemonicParsing="false" onAction="#handleLogoutButton" prefHeight="29.0" prefWidth="138.0" text="Logout" />
+    <Label layoutX="127.0" layoutY="173.0" prefHeight="53.0" prefWidth="73.0" text="WELCOME, " textFill="WHITE" />
+    <Button fx:id="unlockFile" font="$x2" layoutX="25.0" layoutY="343.0" mnemonicParsing="false" onAction="#handleUnlockFileButton" prefHeight="53.0" prefWidth="519.0" text="UNLOCK A FILE" textFill="$x4" />
+    <Button fx:id="lockFolder" font="$x2" layoutX="27.0" layoutY="413.0" mnemonicParsing="false" onAction="#handleLockFolderButton" prefHeight="53.0" prefWidth="519.0" text="LOCK A FOLDER" textFill="$x4" />
+    <Button fx:id="unlockFolder" font="$x2" layoutX="25.0" layoutY="480.0" mnemonicParsing="false" onAction="#handleUnlockFolderButton" prefHeight="53.0" prefWidth="519.0" text="UNLOCK A FOLDER" textFill="$x4" />
+    <Button fx:id="help" layoutX="220.0" layoutY="226.0" mnemonicParsing="false" onAction="#handleHelpButton" prefHeight="29.0" prefWidth="109.0" text="Help" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#fff500" height="161.0" layoutX="2.0" layoutY="0.0" stroke="BLACK" strokeType="INSIDE" width="570.0001220703125" />
+    <Text fill="RED" layoutX="259.0" layoutY="54.0" scaleX="7.704341494923157" scaleY="4.382525697503671" strokeType="OUTSIDE" strokeWidth="0.0" text="Easy Locker">
+      <font>
+        <Font name="Bernard MT Condensed" size="12.0" />
+      </font>
+    </Text>
+    <Label layoutX="200.0" layoutY="81.0" prefHeight="29.0" prefWidth="171.0" text="Experience Simplicity" textFill="#4100cc">
+      <font>
+        <Font name="Californian FB Bold" size="18.0" />
+      </font>
+    </Label>
+    <Label font="$x1" layoutX="112.0" layoutY="111.0" prefHeight="41.0" prefWidth="346.0" text="HIDE YOUR CONFIDENTIAL FILES ON pc" textFill="#009987" />
+    <Button fx:id="deleteId" layoutX="231.0" layoutY="542.0" mnemonicParsing="false" onAction="#handleDeleteIdButton" prefHeight="29.0" prefWidth="109.0" text="Delete ID" textFill="BLACK" />
+    <Label fx:id="confirmationLabel" layoutX="63.0" layoutY="300.0" prefHeight="53.0" prefWidth="445.0" text="Are you sure you want to delete this ID?" textFill="WHITE">
+      <font>
+        <Font name="Arial" size="25.0" />
+      </font>
+    </Label>
+    <Button fx:id="confirmationNo" layoutX="141.0" layoutY="393.0" mnemonicParsing="false" onAction="#handleNoButton" prefHeight="29.0" prefWidth="90.0" text="No" />
+    <Button fx:id="confirmationYes" layoutX="340.0" layoutY="393.0" mnemonicParsing="false" onAction="#handleYesButton" prefHeight="29.0" prefWidth="90.0" text="Yes" />
+    <Label fx:id="confirmationError" layoutX="161.0" layoutY="257.0" prefHeight="29.0" prefWidth="269.0" text="Oops! Something went wrong! Try again" textFill="WHITE">
+      <font>
+        <Font size="14.0" />
+      </font>
+    </Label>
+  </children>
+</AnchorPane>

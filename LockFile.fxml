@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="547.0" prefWidth="542.0" style="-fx-background-color: #002dbf;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="easylocker.LockFileController">
+  <children>
+    <Label layoutX="127.0" layoutY="176.0" prefHeight="41.0" prefWidth="287.0" text="Pick a file you want to lock:" textFill="WHITE">
+      <font>
+        <Font name="Arial Rounded MT Bold" size="20.0" />
+      </font>
+    </Label>
+    <TextField fx:id="filePath" layoutX="64.0" layoutY="241.0" prefHeight="29.0" prefWidth="315.0" />
+    <Button fx:id="browse" layoutX="390.0" layoutY="241.0" mnemonicParsing="false" onAction="#handleBrowseButton" prefHeight="29.0" prefWidth="74.0" text="Browse" />
+    <RadioButton fx:id="basic" layoutX="64.0" layoutY="290.0" mnemonicParsing="false" onAction="#handleBasicRadioButton" prefHeight="29.0" prefWidth="107.0" text="BASIC_LOCK:" textFill="WHITE" />
+    <Label layoutX="190.0" layoutY="297.0" prefWidth="287.0" text="Alters windows permissions to protect your files" textFill="WHITE" />
+    <Label layoutX="190.0" layoutY="313.0" prefWidth="287.0" text="from getting deleted/altered by mistake." textFill="WHITE" />
+    <RadioButton fx:id="premium" layoutX="61.0" layoutY="342.0" mnemonicParsing="false" onAction="#handlePremiumRadioButton" prefHeight="30.0" prefWidth="114.0" text="SUPER_LOCK:" textFill="WHITE" />
+    <Label layoutX="182.0" layoutY="349.0" prefWidth="304.0" text="Password protection for your file's privacy" textFill="WHITE" />
+    <Hyperlink fx:id="basicLink" layoutX="407.0" layoutY="313.0" minHeight="16.0" onAction="#handleBasicLink" prefHeight="29.0" prefWidth="74.0" text="Know more" textFill="WHITE">
+      <font>
+        <Font name="Arial Italic" size="12.0" fx:id="x1" />
+      </font>
+    </Hyperlink>
+    <Hyperlink font="$x1" layoutX="413.0" layoutY="351.0" minHeight="16.0" onAction="#handleBasicLink" prefHeight="29.0" prefWidth="74.0" text="Know more" textFill="WHITE" />
+    <Label fx:id="pass" layoutX="101.0" layoutY="387.0" prefHeight="29.0" prefWidth="126.0" text="Password For This File:" textFill="WHITE" />
+    <PasswordField fx:id="password" layoutX="235.0" layoutY="391.0" prefWidth="212.0" />
+    <Label fx:id="repeatPass" layoutX="118.0" layoutY="423.0" prefHeight="29.0" prefWidth="97.0" text="Repeat Password:" textFill="WHITE" />
+    <PasswordField fx:id="repeatPassword" layoutX="235.0" layoutY="426.0" prefWidth="212.0" />
+    <Button fx:id="lockFile" layoutX="361.0" layoutY="483.0" mnemonicParsing="false" onAction="#handleLockFileButton" prefHeight="29.0" prefWidth="107.0" text="Lock This File" />
+    <Button fx:id="back" layoutX="64.0" layoutY="483.0" mnemonicParsing="false" onAction="#handleBackButton" prefHeight="29.0" prefWidth="88.0" text="Back" />
+    <Hyperlink layoutX="156.0" layoutY="452.0" onAction="#handleBasicLink" prefWidth="234.0" text="What will happen if I lose my password?" textFill="WHITE" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#fff500" height="161.0" layoutX="-7.0" layoutY="0.0" stroke="BLACK" strokeType="INSIDE" width="570.0001220703125" />
+    <Text fill="RED" layoutX="255.0" layoutY="54.0" scaleX="7.704341494923157" scaleY="4.382525697503671" strokeType="OUTSIDE" strokeWidth="0.0" text="Easy Locker">
+      <font>
+        <Font name="Bernard MT Condensed" size="12.0" />
+      </font>
+    </Text>
+    <Label layoutX="185.0" layoutY="81.0" prefHeight="29.0" prefWidth="171.0" text="Experience Simplicity" textFill="#4100cc">
+      <font>
+        <Font name="Californian FB Bold" size="18.0" />
+      </font>
+    </Label>
+    <Label layoutX="98.0" layoutY="110.0" prefHeight="41.0" prefWidth="346.0" text="HIDE YOUR CONFIDENTIAL FILES ON pc" textFill="#009987">
+      <font>
+        <Font name="Algerian" size="19.0" />
+      </font>
+    </Label>
+  </children>
+</AnchorPane>

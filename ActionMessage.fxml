@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="525.0" prefWidth="522.0" style="-fx-background-color: #002dbf;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="easylocker.FileIsLockedController">
+  <children>
+    <Label layoutX="171.0" layoutY="189.0" prefHeight="41.0" prefWidth="181.0" text="Success Message:" textFill="WHITE">
+      <font>
+        <Font name="Arial Rounded MT Bold" size="20.0" />
+      </font>
+    </Label>
+    <Label fx:id="message" layoutX="148.0" layoutY="237.0" prefHeight="52.0" prefWidth="226.0" text="YOUR FILE IS LOCKED" textFill="#14ff00">
+      <font>
+        <Font name="Arial Black" size="18.0" />
+      </font>
+    </Label>
+    <Button fx:id="back" layoutX="191.0" layoutY="320.0" mnemonicParsing="false" onAction="#handleBackButton" prefHeight="41.0" prefWidth="140.0" text="Back To Main Screen" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#fff500" height="161.0" layoutX="-6.0" layoutY="0.0" stroke="BLACK" strokeType="INSIDE" width="570.0001220703125" />
+    <Text fill="RED" layoutX="252.0" layoutY="54.0" scaleX="7.704341494923157" scaleY="4.382525697503671" strokeType="OUTSIDE" strokeWidth="0.0" text="Easy Locker">
+      <font>
+        <Font name="Bernard MT Condensed" size="12.0" />
+      </font>
+    </Text>
+    <Label layoutX="194.0" layoutY="81.0" prefHeight="29.0" prefWidth="171.0" text="Experience Simplicity" textFill="#4100cc">
+      <font>
+        <Font name="Californian FB Bold" size="18.0" />
+      </font>
+    </Label>
+    <Label layoutX="106.0" layoutY="110.0" prefHeight="41.0" prefWidth="346.0" text="HIDE YOUR CONFIDENTIAL FILES ON pc" textFill="#009987">
+      <font>
+        <Font name="Algerian" size="19.0" />
+      </font>
+    </Label>
+  </children>
+</AnchorPane>

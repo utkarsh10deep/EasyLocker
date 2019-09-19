@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="571.0" prefWidth="521.0" style="-fx-background-color: #002dbf;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="easylocker.UnlockFileController">
+  <children>
+    <Label layoutX="73.0" layoutY="180.0" prefHeight="41.0" prefWidth="377.0" text="Pick a folder where locked file is kept:" textFill="WHITE">
+      <font>
+        <Font name="Arial Rounded MT Bold" size="20.0" />
+      </font>
+    </Label>
+    <TextField fx:id="filePath" layoutX="65.0" layoutY="228.0" prefHeight="29.0" prefWidth="315.0" />
+    <Button fx:id="browse" layoutX="393.0" layoutY="228.0" mnemonicParsing="false" onAction="#handleBrowseButton" prefHeight="29.0" prefWidth="74.0" text="Browse" />
+    <RadioButton fx:id="basic" layoutX="44.0" layoutY="322.0" mnemonicParsing="false" onAction="#handleBasicRadioButton" prefHeight="29.0" prefWidth="107.0" text="BASIC_UNLOCK:" textFill="WHITE" />
+    <Label layoutX="162.0" layoutY="322.0" prefHeight="29.0" prefWidth="181.0" text="For files locked with basic lock." textFill="WHITE" />
+    <Hyperlink layoutX="329.0" layoutY="322.0" minHeight="16.0" onAction="#handleLink" prefHeight="29.0" prefWidth="74.0" text="Know more" textFill="WHITE">
+      <font>
+        <Font name="Arial Italic" size="12.0" fx:id="x1" />
+      </font>
+    </Hyperlink>
+    <RadioButton id="basic" fx:id="premium" layoutX="44.0" layoutY="365.0" mnemonicParsing="false" onAction="#handlePremiumRadioButton" prefHeight="29.0" prefWidth="128.0" text="SUPER_UNLOCK:" textFill="WHITE" />
+    <Label layoutX="172.0" layoutY="365.0" prefHeight="29.0" prefWidth="197.0" text="For files locked with super lock." textFill="WHITE" />
+    <Hyperlink font="$x1" layoutX="347.0" layoutY="365.0" minHeight="16.0" onAction="#handleLink" prefHeight="29.0" prefWidth="74.0" text="Know more" textFill="WHITE" />
+    <Label fx:id="pass" layoutX="65.0" layoutY="411.0" prefHeight="29.0" prefWidth="126.0" text="Password For This File:" textFill="WHITE" />
+    <PasswordField fx:id="password" layoutX="192.0" layoutY="414.0" prefWidth="212.0" />
+    <Button fx:id="back" layoutX="49.0" layoutY="469.0" mnemonicParsing="false" onAction="#handleBackButton" prefHeight="29.0" prefWidth="88.0" text="Back" />
+    <Button fx:id="unlockFile" layoutX="367.0" layoutY="469.0" mnemonicParsing="false" onAction="#handleUnlockFileButton" prefHeight="29.0" prefWidth="88.0" text="Unlock File" />
+    <TextField fx:id="fileName" layoutX="139.0" layoutY="275.0" prefHeight="29.0" prefWidth="227.0" />
+    <Label fx:id="fileNameLabel" layoutX="73.0" layoutY="279.0" prefHeight="22.0" prefWidth="64.0" text="File Name:" textFill="WHITE" />
+    <Hyperlink fx:id="fileNameLink" font="$x1" layoutX="374.0" layoutY="276.0" minHeight="16.0" onAction="#handleLink" prefHeight="29.0" prefWidth="74.0" text="Know more" textFill="WHITE" />
+    <Label id="incorrectPassword" fx:id="passwordIncorrect" layoutX="233.0" layoutY="440.0" prefHeight="22.0" prefWidth="163.0" text="" textFill="RED">
+      <font>
+        <Font size="12.0" />
+      </font>
+    </Label>
+    <Button fx:id="forgotPassword" layoutX="203.0" layoutY="469.0" mnemonicParsing="false" onAction="#handleForgotPasswordButton" prefHeight="29.0" prefWidth="116.0" text="Forgot Password" />
+    <Label fx:id="internetLabel" layoutX="184.0" layoutY="489.0" prefHeight="29.0" prefWidth="173.0" text="(Requires Internet Connection)" textFill="WHITE" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#fff500" height="161.0" layoutX="-6.0" layoutY="0.0" stroke="BLACK" strokeType="INSIDE" width="570.0001220703125" />
+    <Text fill="RED" layoutX="244.0" layoutY="54.0" scaleX="7.704341494923157" scaleY="4.382525697503671" strokeType="OUTSIDE" strokeWidth="0.0" text="Easy Locker">
+      <font>
+        <Font name="Bernard MT Condensed" size="12.0" />
+      </font>
+    </Text>
+    <Label layoutX="176.0" layoutY="73.0" prefHeight="29.0" prefWidth="171.0" text="Experience Simplicity" textFill="#4100cc">
+      <font>
+        <Font name="Californian FB Bold" size="18.0" />
+      </font>
+    </Label>
+    <Label layoutX="100.0" layoutY="102.0" prefHeight="41.0" prefWidth="346.0" text="HIDE YOUR CONFIDENTIAL FILES ON pc" textFill="#009987">
+      <font>
+        <Font name="Algerian" size="19.0" />
+      </font>
+    </Label>
+  </children>
+</AnchorPane>

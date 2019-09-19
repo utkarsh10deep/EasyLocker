@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="551.0" prefWidth="525.0" style="-fx-background-color: #002dbf;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="easylocker.UnlockFolderController">
+  <children>
+    <Label layoutX="64.0" layoutY="171.0" prefHeight="41.0" prefWidth="398.0" text="Pick a folder where locked folder is kept:" textFill="WHITE">
+      <font>
+        <Font name="Arial Rounded MT Bold" size="20.0" />
+      </font>
+    </Label>
+    <TextField id="filePath" fx:id="folderPath" layoutX="64.0" layoutY="226.0" prefHeight="29.0" prefWidth="320.0" />
+    <Button fx:id="browse" layoutX="408.0" layoutY="226.0" mnemonicParsing="false" onAction="#handleBrowseButton" prefHeight="29.0" prefWidth="74.0" text="Browse" />
+    <Label id="fileNameLabel" fx:id="folderNameLabel" layoutX="41.0" layoutY="276.0" prefHeight="22.0" prefWidth="74.0" text="Folder Name:" textFill="WHITE" />
+    <TextField id="fileName" fx:id="folderName" layoutX="135.0" layoutY="276.0" prefHeight="29.0" prefWidth="227.0" />
+    <Hyperlink id="fileNameLink" fx:id="folderNameLink" layoutX="381.0" layoutY="273.0" minHeight="16.0" prefHeight="29.0" prefWidth="74.0" text="Know more" textFill="WHITE">
+      <font>
+        <Font name="Arial Italic" size="12.0" fx:id="x1" />
+      </font>
+    </Hyperlink>
+    <Label layoutX="203.0" layoutY="348.0" prefHeight="29.0" prefWidth="181.0" text="For folders locked with basic lock." textFill="WHITE" />
+    <Button fx:id="back" layoutX="115.0" layoutY="428.0" mnemonicParsing="false" onAction="#handleBackButton" prefHeight="29.0" prefWidth="88.0" text="Back" />
+    <Button id="unlockFile" fx:id="unlockFolder" layoutX="344.0" layoutY="428.0" mnemonicParsing="false" onAction="#handleUnlockFolderButton" prefHeight="29.0" prefWidth="100.05364990234375" text="Unlock Folder" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#fff500" height="161.0" layoutX="-11.0" layoutY="0.0" stroke="BLACK" strokeType="INSIDE" width="570.0001220703125" />
+    <Text fill="RED" layoutX="253.0" layoutY="54.0" scaleX="7.704341494923157" scaleY="4.382525697503671" strokeType="OUTSIDE" strokeWidth="0.0" text="Easy Locker">
+      <font>
+        <Font name="Bernard MT Condensed" size="12.0" />
+      </font>
+    </Text>
+    <Label layoutX="168.0" layoutY="74.0" prefHeight="29.0" prefWidth="171.0" text="Experience Simplicity" textFill="#4100cc">
+      <font>
+        <Font name="Californian FB Bold" size="18.0" />
+      </font>
+    </Label>
+    <Label layoutX="90.0" layoutY="103.0" prefHeight="41.0" prefWidth="346.0" text="HIDE YOUR CONFIDENTIAL FILES ON pc" textFill="#009987">
+      <font>
+        <Font name="Algerian" size="19.0" />
+      </font>
+    </Label>
+    <Label layoutX="87.0" layoutY="348.0" prefHeight="29.0" prefWidth="107.50482177734375" text="Basic Unlock:" textFill="WHITE">
+      <font>
+        <Font name="Arial Rounded MT Bold" size="16.0" />
+      </font>
+    </Label>
+  </children>
+</AnchorPane>
